@@ -1,0 +1,2 @@
+class Yaku < ApplicationRecord
+end
