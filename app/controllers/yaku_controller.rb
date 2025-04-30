@@ -1,6 +1,7 @@
 class YakuController < ApplicationController
   def index
-    @yakus = Yaku.all
+    @q = Yaku.ransack(params[:q])
+    @yakus = @q.result(distinct: true)
   end
 
   def show
