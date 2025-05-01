@@ -1,7 +1,8 @@
 <div class="text-center mt-10">
   <h1 class="text-2xl font-bold mb-4">クイズ終了！🎉</h1>
   <p class="text-gray-700 mb-6">お疲れ様でした！</p>
-  <p class="text-gray-700 mb-6">あなたの正解数は<%= @correct_count %>でした！</p>
+  <p class="text-gray-700 mb-6">正解数<%= @correct_count %>でした！</p>
+  <p class="text-gray-700 mb-6">正答率：<%= (@correct_count * 10) %> %</p>
   <%= link_to '最初からやり直す', quiz_yaku_index_path, class: "bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600" %>
   <div class="mt-8">
     <%= link_to '役一覧へ', yaku_index_path, data: { turbo_frame: "yakus" }, class: "text-blue-500 hover:underline" %>
