@@ -1,5 +1,9 @@
 class YakuController < ApplicationController
   def index
+    session[:quiz_count] = 0
+    session[:used_yaku_ids] = []
+    session[:correct_count] = 0
+
     @q = Yaku.ransack(params[:q])
     @yakus = @q.result(distinct: true)
   end
