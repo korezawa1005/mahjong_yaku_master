@@ -12,5 +12,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "yaku#index"
 
-  resources :yaku, only: [:index, :show]
+  resources :yaku, only: [:index, :show] do
+    collection do
+      get :quiz
+      post :check_answer
+      get :quiz_result
+    end
+  end
 end
