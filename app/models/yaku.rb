@@ -10,6 +10,7 @@ class Yaku < ApplicationRecord
       photo
       created_at
       updated_at
+      reading
     ]
   end
 
