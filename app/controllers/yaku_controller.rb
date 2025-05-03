@@ -5,7 +5,14 @@ class YakuController < ApplicationController
     session[:correct_count] = 0
 
     @q = Yaku.ransack(params[:q])
-    @yakus = @q.result(distinct: true)
+    case params[:category]
+    when "yakuman"
+      @yakus = @q.result(distinct: true).where(han: "役満")
+    when "normal"
+      @yakus = @q.result(distinct: true).where.not(han: "役満")
+    else
+      @yakus = @q.result(distinct: true)
+    end
   end
 
   def show
