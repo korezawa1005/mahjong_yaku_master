@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_04_28_130347) do
+ActiveRecord::Schema[7.2].define(version: 2025_05_03_061827) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,12 +45,13 @@ ActiveRecord::Schema[7.2].define(version: 2025_04_28_130347) do
   create_table "yakus", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "han"
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "menzen_only"
     t.integer "open_han"
+    t.string "reading"
+    t.string "han"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

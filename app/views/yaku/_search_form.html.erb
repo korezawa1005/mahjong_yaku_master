@@ -1,6 +1,6 @@
 <%= search_form_for @q, url: yaku_index_path, method: :get, class: "flex" do |f| %>
   <div class="input-group mb-3">
-    <%= f.search_field :name_or_description_cont, placeholder: "役を検索...", class: "border rounded p-2" %>
+    <%= f.search_field :name_or_description_or_reading_cont, placeholder: "役を検索...", class: "border rounded p-2" %>
     <%= f.submit "検索", class: "ml-2 px-4 py-2 bg-gray-200 rounded" %>
   </div>
 <% end %>

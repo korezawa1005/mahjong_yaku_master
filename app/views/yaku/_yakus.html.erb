@@ -1,14 +1,15 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 w-full">
-    <% yakus.each do |yaku| %>
+    <% yakus.order(created_at: :asc).each do |yaku| %>
       <%= link_to yaku_path(yaku), class: "border rounded-lg shadow p-4 block hover:bg-gray-50" do %>
           <div class="flex justify-between items-center">
-            <h2 class="text-xl font-bold"><%= yaku.name %></h2>
-            <span class="text-gray-500"><%= yaku.menzen_only %></span>
+            <h2 class="text-xl font-bold">
+              <ruby>
+                <%= yaku.name %>
+                <rp>(</rp><rt><%= yaku.reading %></rt><rp>)</rp> <!--ふりがな-->
+              </ruby>
+            </h2>
             <span class="text-gray-500">
-              <%= yaku.han %>翻
-              <% if yaku.open_han.present? %>
-                (<%= yaku.open_han %>)
-              <% end %>            
+              <%= yaku.han == "役満" ? "役満" : "#{yaku.han}翻" %><!--三項演算子　条件 ? 真の時の値 : 偽の時の値　条件が true なら左側、false なら右側を返す-->
             </span>
           </div>
           <p class="mt-2 text-gray-700"><%= yaku.description %></p>

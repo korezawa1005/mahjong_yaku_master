@@ -28,12 +28,10 @@ class YakuController < ApplicationController
 
     session[:used_yaku_ids] << @correct_yaku.id # used_yaku_idsに今問題で出した役のidを追加する
     session[:quiz_count] += 1 # クイズの数であるquiz_countに1を足す
-    
 
-    @choices = (Yaku.where.not(id: @correct_yaku.id).sample(3) + [@correct_yaku]).shuffle #where テーブル内の条件に一致したレコードを配列の形で取得することができるメソッド。
-    #shuffleメソッド　配列の要素をランダムシャッフルして，その結果を配列として返します sampleメソッド 配列の要素を1個(引数を指定した場合 n 個) ランダムに選んで返します。
-    #モデル.where.not(条件..) WHEREと一緒に使用し条件式に一致しないものを取得
-    
+    @choices = (Yaku.where.not(id: @correct_yaku.id).sample(3) + [@correct_yaku]).shuffle # where テーブル内の条件に一致したレコードを配列の形で取得することができるメソッド。
+    # shuffleメソッド　配列の要素をランダムシャッフルして，その結果を配列として返します sampleメソッド 配列の要素を1個(引数を指定した場合 n 個) ランダムに選んで返します。
+    # モデル.where.not(条件..) WHEREと一緒に使用し条件式に一致しないものを取得
   end
 
   def check_answer
