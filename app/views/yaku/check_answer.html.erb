@@ -1,4 +1,5 @@
 <div class="max-w-xl mx-auto mt-12 px-4 text-center">
+  <p>クイズ数: <%= session[:quiz_count] %></p>
   <% if @is_correct %>
     <h2 class="text-3xl font-bold text-green-600 mb-4">正解！🎉</h2>
   <% else %>
@@ -10,7 +11,7 @@
     <%= @correct_yaku.description %>
   </p>
   <p class="text-gray-600 mt-6">あなたの選択: <%= @selected_yaku.name %></p>
-  <%= link_to "次の問題へ", quiz_yaku_index_path, class: "mt-10 inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600" %>
+  <%= link_to "次の問題へ", quiz_yaku_index_path(mode: params[:mode]), data: { turbo: false }, class: "mt-10 inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600" %>
   <div class="mt-8">
     <%= link_to '役一覧へ', yaku_index_path, data: { turbo_frame: "yakus" }, class: "text-blue-500 hover:underline" %>
   </div>

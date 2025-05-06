@@ -1,0 +1,23 @@
+<p>クイズ数: <%= session[:quiz_count] %></p>
+<div id="quiz-question" class="text-center">
+  <h2 class="text-2xl font-bold mb-4">この役の名前はなんでしょう？</h2>
+  <div class="bg-gray-100 rounded p-4 mb-6 inline-block max-w-xl">
+    <%= @correct_yaku.description %>
+    <% if @correct_yaku.photo.present? %>
+      <%= image_tag @correct_yaku.photo, class: "mx-auto rounded shadow-md w-100 h-auto" %>
+    <% end %>
+  </div>
+
+  <div class="flex flex-col items-center gap-4 pb-20">
+    <% @choices.each do |choice| %>
+      <%= button_to check_answer_yaku_index_path(choice_id: choice.id, correct_id: @correct_yaku.id, mode: params[:mode]), 
+                    method: :post, 
+                    data: { turbo: false }, 
+                    class: "px-4 py-2 w-40 text-center border rounded hover:bg-gray-100 font-bold" do %> <!--button_to を ブロック形式（do...end） にすると中にHTMLが書ける -->
+        <ruby>
+          <%= choice.name %><rt class="text-xs leading-none mt-[10px]"><%= choice.reading %></rt>
+        </ruby>
+      <% end %>
+    <% end %>
+  </div>
+</div>
