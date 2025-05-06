@@ -7,7 +7,7 @@ Yaku.create!(
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "メンゼンツも.jpg"
 )
 
 Yaku.create!(
@@ -17,7 +17,7 @@ Yaku.create!(
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "立直.jpg"
 )
 
 Yaku.create!(
@@ -27,7 +27,7 @@ Yaku.create!(
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "一発.jpg"
 )
 
 Yaku.create!(
@@ -37,7 +37,7 @@ Yaku.create!(
   han: '1',
   open_han: '1',
   menzen_only: nil,
-  photo: nil
+  photo: "タンヤオ.jpg"
 )
 
 Yaku.create!(
@@ -47,7 +47,7 @@ Yaku.create!(
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "pinfu.jpg"
 )
 
 Yaku.create!(
@@ -57,7 +57,7 @@ Yaku.create!(
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "一盃口.jpg"
 )
 
 Yaku.create!(
@@ -67,7 +67,7 @@ Yaku.create!(
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "三元牌.jpg"
 )
 
 Yaku.create!(
@@ -77,7 +77,7 @@ Yaku.create!(
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "風牌.jpg"
 )
 
 Yaku.create!(
@@ -97,7 +97,7 @@ Yaku.create!(
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "リンシャンカイホウ.jpg"
 )
 
 Yaku.create!(
@@ -127,7 +127,7 @@ Yaku.create!(
   han: '2',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "wri.jpg"
 )
 
 Yaku.create!(
@@ -137,7 +137,7 @@ Yaku.create!(
   han: '2',
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "七対子.jpg"
 )
 
 Yaku.create!(
@@ -147,7 +147,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "dabuton.jpg"
 )
 
 Yaku.create!(
@@ -157,7 +157,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "トイトイ.jpg"
 )
 
 Yaku.create!(
@@ -167,7 +167,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "三暗刻.jpg"
 )
 
 Yaku.create!(
@@ -177,7 +177,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "3色どうこう.jpg"
 )
 
 Yaku.create!(
@@ -187,7 +187,7 @@ Yaku.create!(
   han: "2",
   open_han: '1',
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "sansyokudoujun.jpg"
 )
 
 Yaku.create!(
@@ -197,7 +197,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "ホンロー.jpg"
 )
 
 Yaku.create!(
@@ -207,7 +207,7 @@ Yaku.create!(
   han: "2",
   open_han: 1,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "いっつー.jpg"
 )
 
 Yaku.create!(
@@ -217,7 +217,7 @@ Yaku.create!(
   han: "2",
   open_han: 1,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "チャンタ.jpg"
 )
 
 Yaku.create!(
@@ -227,7 +227,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "小三元.jpg"
 )
 
 Yaku.create!(
@@ -237,7 +237,7 @@ Yaku.create!(
   han: "2",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "三槓子.jpg"
 )
 
 Yaku.create!(
@@ -247,7 +247,7 @@ Yaku.create!(
   han: "3",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "混一色.jpg"
 )
 
 Yaku.create!(
@@ -257,7 +257,7 @@ Yaku.create!(
   han: "3",
   open_han: 2,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "juntyan.jpg"
 )
 
 Yaku.create!(
@@ -267,7 +267,7 @@ Yaku.create!(
   han: "3",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "二盃口.jpg"
 )
 
 Yaku.create!(
@@ -277,7 +277,7 @@ Yaku.create!(
   han: "5",
   open_han: 5,
   menzen_only: '門前役',
-  photo: nil
+  photo: "流し満貫.jpg"
 )
 
 Yaku.create!(
@@ -287,7 +287,7 @@ Yaku.create!(
   han: "6",
   open_han: 5,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "清一色.jpg"
 )
 
 Yaku.create!(
@@ -303,11 +303,11 @@ Yaku.create!(
 Yaku.create!(
   name: '地和',
   reading: 'チーホー',
-  description: '鳴きのない1巡目に、子がツモであがると成立する役です。',
+  description: '鳴きのない1巡目に、子がツモであがると成立する役です。私は一度だけ上がったことがあります',
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "地和.jpg"
 )
 
 Yaku.create!(
@@ -327,7 +327,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "緑一色.jpg"
 )
 
 Yaku.create!(
@@ -337,7 +337,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "大三元.jpg"
 )
 
 Yaku.create!(
@@ -347,7 +347,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "小四喜和.jpg"
 )
 
 Yaku.create!(
@@ -357,7 +357,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "字一色.jpg"
 )
 
 Yaku.create!(
@@ -367,7 +367,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "国士無双.jpg"
 )
 
 Yaku.create!(
@@ -377,7 +377,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "チュー連.jpg"
 )
 
 Yaku.create!(
@@ -387,7 +387,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "四暗刻.jpg"
 )
 
 Yaku.create!(
@@ -397,7 +397,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "チンロートウ.jpg"
 )
 
 Yaku.create!(
@@ -407,7 +407,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "四槓子.jpg"
 )
 
 Yaku.create!(
@@ -417,7 +417,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "四暗刻単騎.jpg"
 )
 
 Yaku.create!(
@@ -427,7 +427,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
-  photo: nil
+  photo: "daisushi.jpg"
 )
 
 Yaku.create!(
@@ -437,7 +437,7 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "純正中蓮.jpg"
 )
 
 Yaku.create!(
@@ -447,5 +447,5 @@ Yaku.create!(
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
-  photo: nil
+  photo: "国士13面.jpg"
 )

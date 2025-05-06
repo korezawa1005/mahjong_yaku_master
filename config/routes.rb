@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       get :quiz
       post :check_answer
       get :quiz_result
+      get :quiz_top
     end
   end
 end
