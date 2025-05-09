@@ -13,7 +13,7 @@ Yaku.create!(
 Yaku.create!(
   name: '立直',
   reading: 'リーチ',
-  description: 'テンパイしている時に「リーチ」と宣言し、捨て牌に横向きに置くことで成立する役です。リーチをかける時、場に1000点を出さなければならない',
+  description: 'テンパイしている時に「リーチ」と宣言し、捨て牌に横向きに置くことで成立する役です。また、場に1000点を出さなければならない',
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
@@ -43,7 +43,7 @@ Yaku.create!(
 Yaku.create!(
   name: '平和',
   reading: 'ピンフ',
-  description: "下記を満たしている時に成立する役です。\n・4面子が順子（連番で揃えた面子）で構成されている。\n・頭は役牌（白元牌、場風牌、自風牌）以外。\n・和了牌の待ち方は両面待ち。",
+  description: "下記を満たしている時に成立する役です。4面子が順子（連番で揃えた面子）で構成されている。頭は役牌（白元牌、場風牌、自風牌）以外。和了牌の待ち方は両面待ち。",
   han: '1',
   open_han: nil,
   menzen_only: '門前役',
@@ -63,7 +63,7 @@ Yaku.create!(
 Yaku.create!(
   name: '三元牌',
   reading: 'サンゲンパイ',
-  description: '三元牌『白（ハク）、發（ハツ）、中（チュン）』のいずれかが3枚以上揃うと成立する役です。',
+  description: '『白（ハク）、發（ハツ）、中（チュン）』のいずれかが3枚以上揃うと成立する役です。',
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
@@ -83,7 +83,7 @@ Yaku.create!(
 Yaku.create!(
   name: '槍槓',
   reading: 'チャンカン',
-  description: '他家が加槓（ポンしている牌にももう1枚加えて槓）した牌であがると成立する役です。他に役がなくても槍槓のみであがれます。',
+  description: '他家が加槓（ポンしている牌にももう1枚加えて槓）した牌であがると成立する役です。',
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
@@ -93,7 +93,7 @@ Yaku.create!(
 Yaku.create!(
   name: '嶺上開花',
   reading: 'リンシャンカイホウ',
-  description: 'カンをした際にツモる嶺上牌であがると成立する役です。他に役がなくても嶺上開花のみであがれます。',
+  description: 'カンをした際にツモる嶺上牌であがると成立する役です。',
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
@@ -103,7 +103,7 @@ Yaku.create!(
 Yaku.create!(
   name: '海底撈月',
   reading: 'ハイテイラオユエ',
-  description: '局の最後の牌（海底牌ハイテイハイ）でツモあがると成立する役です。',
+  description: '局の最後の牌でツモあがると成立する役です。',
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',
@@ -113,7 +113,7 @@ Yaku.create!(
 Yaku.create!(
   name: '河底撈魚',
   reading: 'ホウテイラオユイ',
-  description: '局の最後の打牌（河底牌ホウテイハイ）であがると成立する役です。',
+  description: '局の最後の打牌であがると成立する役です。',
   han: '1',
   open_han: '1',
   menzen_only: '鳴き可',

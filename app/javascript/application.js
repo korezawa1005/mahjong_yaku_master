@@ -2,7 +2,7 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 
-document.addEventListener("turbo:load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   console.log("loaded via turbo:load");
   const target = document.getElementById("quiz-question");
   if (target) {
