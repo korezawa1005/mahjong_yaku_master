@@ -7,7 +7,7 @@
     <div class="bg-gray-100 rounded p-4 mb-6 inline-block max-w-xl">
       <%= @correct_yaku.description %>
       <% if @correct_yaku.photo.present? %>
-        <%= image_tag @correct_yaku.photo, class: "mx-auto rounded shadow-md w-100 h-auto transition transform hover:scale-105" %>
+        <%= image_tag @correct_yaku.photo, class: "mx-auto rounded shadow-md w-100 h-auto transition transform" %>
       <% end %>
     </div>
 
@@ -22,7 +22,7 @@
           </ruby>
         <% end %>
       <% end %>
-      <%= link_to '最初からやり直す', yaku_index_path, class: "mt-0 inline-block px-6 py-3 bg-red-500 text-white font-semibold rounded hover:bg-red-600" %>
+      <%= link_to '最初からやり直す', quiz_top_yaku_index_path, class: "text-blue-500 hover:underline" %>
     </div>
   </div>
 </div>

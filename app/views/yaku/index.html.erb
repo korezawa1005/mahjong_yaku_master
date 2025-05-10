@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center w-full space-y-4">
+<div class="flex flex-col items-center w-full space-y-4 pb-12">
   <div class="text-center mt-4 mb-2">
     <h1 class="text-3xl font-bold">
       <%= link_to "麻雀役マスター", yaku_index_path %>
@@ -23,14 +23,9 @@
             class: "inline_block px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 whitespace-nowrap" %>
     </div>
   </div>
-
   <turbo-frame id="yakus">
     <%= render partial: "yakus", locals: { yakus: @yakus } %>
   </turbo-frame>
-
-  <div class="mt-8">
-    <%= link_to '元に戻る', yaku_index_path, data: { turbo_frame: "yakus" }, class: "text-blue-500 hover:underline" %>
-  </div>
 </div>
 
 

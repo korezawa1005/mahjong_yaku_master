@@ -1,4 +1,4 @@
-<div class="max-w-2xl mx-auto mt-10 px-4 text-center">  
+<div class="max-w-xl mx-auto my-12 mt-20 bg-white/70 backdrop-blur-md rounded-2xl shadow-2xl px-8 py-10 text-center space-y-8"> 
   <div class="text-center">
     <h1 class="text-2xl font-bold mb-4">クイズ終了！🎉</h1>
     <p class="text-gray-700 mb-6">お疲れ様でした！</p>
@@ -16,7 +16,8 @@
     <% end %>
 
     <div class="mt-8">
-      <%= link_to '役一覧へ', yaku_index_path, class: "text-blue-500 hover:underline" %>
+      <p><%= link_to '最初からやり直す', quiz_top_yaku_index_path, class: "text-blue-500 hover:underline" %></p>
+      <p><%= link_to '役一覧へ', yaku_index_path, class: "text-blue-500 hover:underline" %></p>
     </div>
   </div>
 </div>

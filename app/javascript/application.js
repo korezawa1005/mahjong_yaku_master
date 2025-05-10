@@ -9,4 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
     target.scrollIntoView({ behavior: "smooth" });
   }
 });
-console.log("loaded");
+
