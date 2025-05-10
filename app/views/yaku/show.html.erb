@@ -1,22 +1,22 @@
 <turbo-frame id="yakus">
-  <div class="block max-w-3xl mx-auto mt-10 px-4">
+  <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
     <h1 class="text-3xl font-bold mb-4"><%= @yaku.name %></h1>
     <p class="text-gray-700 mb-6"><%= @yaku.description %></p>
-    <p class="text-gray-500">翻数: <%= @yaku.han %>翻
+    <p class="text-gray-500">翻数: <%= @yaku.han %>
       <% if @yaku.open_han.present? %>
-        (<%= @yaku.open_han %>)
+        (鳴き<%= @yaku.open_han %>翻)
       <% end %>  
     </p>
     <% if @yaku.photo.present? %>
-      <%= image_tag @yaku.photo, class: "block mx-auto my-4" %>
+      <%= image_tag @yaku.photo, class: "mx-auto my-6 w-full max-w-3xl h-auto ring-4 ring-white rounded-md shadow-xl" %>
     <% end %>
-  </div>
-  <div class="navigation-buttons">
-    <% if @prev_yaku %>
-      <%= link_to "← 前へ", yaku_path(@prev_yaku), class: "btn btn-outline" %>
-    <% end %>
-    <% if @next_yaku %>
-      <%= link_to "次へ →", yaku_path(@next_yaku), class: "btn btn-outline" %>
-    <% end %>
+    <div class="navigation-buttons flex justify-between">
+      <% if @prev_yaku %>
+        <%= link_to "← 前へ", yaku_path(@prev_yaku), class: "btn btn-primary btn-lg hover:opacity-40 transition" %>
+      <% end %>
+      <% if @next_yaku %>
+        <%= link_to "次へ →", yaku_path(@next_yaku), class: "btn btn-primary btn-lg hover:opacity-40 transition" %>
+      <% end %>
+    </div>
   </div>
 </turbo-frame>

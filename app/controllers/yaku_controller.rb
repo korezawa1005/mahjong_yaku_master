@@ -22,6 +22,9 @@ class YakuController < ApplicationController
   end
 
   def quiz_top
+    session[:quiz_count] = 0
+    session[:used_yaku_ids] = []
+    session[:correct_count] = 0
   end
   def quiz
     session[:quiz_count] ||= 0 # quiz_countがnilならクイズの数を０に設定する　
