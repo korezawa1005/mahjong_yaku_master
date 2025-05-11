@@ -293,7 +293,7 @@ Yaku.create!(
 Yaku.create!(
   name: '天和',
   reading: 'テンホー',
-  description: '親が配牌であがっていると成立する役です。',
+  description: '親が配牌であがっていると成立する役です。出現率は約0.002%',
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
@@ -303,7 +303,7 @@ Yaku.create!(
 Yaku.create!(
   name: '地和',
   reading: 'チーホー',
-  description: '鳴きのない1巡目に、子がツモであがると成立する役です。私は一度だけ上がったことがあります',
+  description: '鳴きのない1巡目に、子がツモであがると成立する役です。私は一度だけ上がったことがあります。出現率は約0.0003%',
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
@@ -323,7 +323,7 @@ Yaku.create!(
 Yaku.create!(
   name: '緑一色',
   reading: 'リューイーソー',
-  description: '發と、索子の2・3・4・6・8（すべて使わなくてもよい）で揃えると成立する役です',
+  description: '發と、索子の2・3・4・6・8（すべて使わなくてもよい）で揃えると成立する役です。出現率は約0.001%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
@@ -333,7 +333,7 @@ Yaku.create!(
 Yaku.create!(
   name: '大三元',
   reading: 'ダイサンゲン',
-  description: '白・發・中すべてを刻子や槓子で揃えると成立する役です',
+  description: '白・發・中すべてを刻子や槓子で揃えると成立する役です。出現率は約0.04%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
@@ -343,7 +343,7 @@ Yaku.create!(
 Yaku.create!(
   name: '小四喜',
   reading: 'ショウスーシー',
-  description: '東・南・西・北のいずれか1つを頭、他の3つを刻子や槓子で揃えると成立する役です',
+  description: '東・南・西・北のいずれか1つを頭、他の3つを刻子や槓子で揃えると成立する役です。出現率は0.01%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
@@ -353,7 +353,7 @@ Yaku.create!(
 Yaku.create!(
   name: '字一色',
   reading: 'ツーイーソー',
-  description: '字牌で揃えると成立する役です',
+  description: '字牌で揃えると成立する役です。出現率は約0.009%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
@@ -363,7 +363,7 @@ Yaku.create!(
 Yaku.create!(
   name: '国士無双',
   reading: 'コクシムソウ',
-  description: '1・9・字牌の頭と、1・9・字牌を全種類揃えると成立する役です',
+  description: '1・9・字牌の頭と、1・9・字牌を全種類揃えると成立する役です。出現率は0.04%',
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
@@ -373,7 +373,7 @@ Yaku.create!(
 Yaku.create!(
   name: '九蓮宝燈',
   reading: 'チューレンポートウ',
-  description: '萬子、筒子、索子の1種類で、1・9を3つ、2〜8を1つに加えた形で、1〜9のいずれか1つを加えた形で揃えると成立する役です。',
+  description: '萬子、筒子、索子の1種類で、1・9を3つ、2〜8を1つに加えた形で、1〜9のいずれか1つを加えた形で揃えると成立する役です。出現率は約0.0005%',
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
@@ -383,7 +383,7 @@ Yaku.create!(
 Yaku.create!(
   name: '四暗刻',
   reading: 'スーアンコウ',
-  description: '暗刻（手牌で同じ牌3つを揃えた面子）や暗槓の槓子（手牌で同じ牌4つを揃え積した面子）を4つ揃えると成立する役です。',
+  description: '暗刻（手牌で同じ牌3つを揃えた面子）や暗槓の槓子（手牌で同じ牌4つを揃え積した面子）を4つ揃えると成立する役です。出現率は約0.05%',
   han: "役満",
   open_han: nil,
   menzen_only: '門前役',
@@ -393,7 +393,7 @@ Yaku.create!(
 Yaku.create!(
   name: '清老頭',
   reading: 'チンロウトウ',
-  description: '1・9牌だけで揃えると成立する役です。',
+  description: '1・9牌だけで揃えると成立する役です。出現率は約0.002%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
@@ -403,7 +403,7 @@ Yaku.create!(
 Yaku.create!(
   name: '四槓子',
   reading: 'スーカンツ',
-  description: '槓子（同じ牌4つを揃え積した面子）を4つ揃えると成立する役です。あがったら死ぬ',
+  description: '槓子（同じ牌4つを揃え積した面子）を4つ揃えると成立する役です。あがったら死ぬ。出現率は0.0002%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
@@ -423,7 +423,7 @@ Yaku.create!(
 Yaku.create!(
   name: '大四喜',
   reading: 'ダイスーシー',
-  description: '東・南・西・北を刻子（同じ牌3つで揃えた面子）や槓子（同じ牌4つを揃え積した面子）で揃えると成立する役です。',
+  description: '東・南・西・北を刻子（同じ牌3つで揃えた面子）や槓子（同じ牌4つを揃え積した面子）で揃えると成立する役です。出現率は約0.01%',
   han: "役満",
   open_han: nil,
   menzen_only: '鳴き可',
